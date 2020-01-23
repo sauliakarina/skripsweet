@@ -1,0 +1,18 @@
+*borang ilkom
+standar 3 mahasiswa dan lulusan hal 50
+umpan balik pengguna hal 46
+evaluasi kinerja lulusan hal 57
+*sistem informasi
+elisabeth
+https://books.google.co.id/books?id=8VNLDwAAQBAJ&printsec=frontcover&dq=pengantar+sistem+informasi&hl=id&sa=X&ved=0ahUKEwiy98vZ4J_iAhXHeisKHRmFBeMQ6AEIKTAA#v=onepage&q=pengantar%20sistem%20informasi&f=false
+muslihudin komponen SI
+https://books.google.co.id/books?id=2SU3DgAAQBAJ&printsec=frontcover&dq=jurnal+pengertian+sistem+informasi+menurut+para+ahli&hl=id&sa=X&ved=0ahUKEwiwjbC9waHiAhUJLY8KHW2TCEIQ6AEIWDAJ#v=onepage&q=komponen&f=false
+*sdlc
+hanif al fatta
+https://books.google.co.id/books?id=oHi8C1W4N7wC&printsec=frontcover&hl=id#v=onepage&q&f=false
+*use case
+ade hendini
+https://ejournal.bsi.ac.id/ejurnal/index.php/khatulistiwa/article/viewFile/1262/1027
+*basis data
+sulianta juju jenis data/tabel 
+https://books.google.co.id/books?id=GdHHsaiEI-MC&printsec=frontcover&dq=sulianta+juju+basis+data&hl=id&sa=X&ved=0ahUKEwjRkPex3_LkAhUHPY8KHVyoBsoQ6AEIKTAA#v=onepage&q=sulianta%20juju%20basis%20data&f=false
