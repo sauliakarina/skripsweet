@@ -14,10 +14,10 @@ Secara umum tahapan pengembangan sistem dalam metode \emph{System Development Li
 Kebutuhan mengenai sistem didapat berdasarkan hasil analisis perbandingan sistem \textit{tracer study} yang sudah ada yaitu, Sistem \textit{Tracer Study} Dikti, dan Sistem Informasi \textit{Tracer Study} Universitas Negeri Jakarta [Lampiran A]. Selain itu, melalui pengumpulan data yang diperoleh dari analisis kebutuhan prodi Ilmu Komputer [Lampiran C]. Berikut beberapa kebutuhan yang didapat:
 \begin{enumerate}
 	\item Memiliki lima pengguna, yaitu admin, koorprodi, alumni, dan pengunjung yang memiliki sub-aktor pengguna alumni. 
-	\item Admin dapat mengelola data alumni dan pengguna alumni, membuat kuesioner, menyunting konten beranda, menampilkan hasil \textit{tracer study}, dan menampilkan statistik jumlah lulusan Ilmu Komputer
-	\item Koorprodi dapat menampilkan data alumni dan pengguna alumni, dapat menampilkan hasil \textit{tracer study}, dan menampilkan statistik jumlah lulusan Ilmu Komputer
-	\item Alumni dapat mengelola data diri dan mengisi kuesioner yang telah dibuat oleh admin
-	\item Pengunjung dapat melakukan pencarian alumni, melihat daftar pengguna alumni, dan melihat data hasil tracer. 
+	\item Admin dapat mengelola data alumni dan pengguna alumni, membuat kuesioner, menyunting konten beranda, dan menampilkan hasil \textit{tracer study}
+	\item Koorprodi dapat menampilkan data alumni dan pengguna alumni, dan dapat menampilkan hasil \textit{tracer study}
+	\item Alumni dapat mengelola data diri, riwayat pekerjaan dan mengisi kuesioner yang telah dibuat oleh admin
+	\item Pengunjung dapat melakukan pencarian alumni, melihat daftar pengguna alumni, dan melihat data hasil \textit{tracer}. 
 	\item Pengguna alumni dapat mengisi form kuesioner.
 \end{enumerate}
 
@@ -27,7 +27,6 @@ Pada tahap ini perancangan dan pemodelan sistem dituangkan dalam bentuk visual m
 
 \subsection{\emph{Use Case Diagram}}
 \textit{Use Case} digunakan untuk mengetahui fungsi apa saja yang terdapat di dalam suatu sistem dan siapa saja yang berhak menggunakan fungsi-fungsi tersebut. Pada sistem ini terdapat lima aktor yaitu admin, koorprodi, alumni, dan penunjung yang memiliki sub-aktor pengguna alumni. Peran-peran aktor tersebut adalah sebagai berikut:
-7
 \begin{enumerate}
 	\item Admin
 	\begin{itemize}
@@ -45,7 +44,7 @@ Pada tahap ini perancangan dan pemodelan sistem dituangkan dalam bentuk visual m
 	\end{itemize}
 	\item Alumni
 	\begin{itemize}
-		\item Alumni dapat mengelola data diri
+		\item Alumni dapat mengelola data diri dan riwayat pekerjaan
 		\item Alumni dapat mengisi form kuesioner \textit{tracer study}
 		\item Alumni dapat melihat daftar pengguna alumni beserta alumni yang bekerja
 	\end{itemize}
@@ -237,7 +236,7 @@ Pada tampilan koorprodi terdapat beberapa menu, yaitu beranda, alumni, pengguna 
 	\label{alumni_beranda}
 \end{figure}
 
-Selanjutnya beralih ke halaman alumni dimana terdapat beberapa menu, yaitu beranda, profil, kuesioner, dan pengguna alumni. Rancangan tampilan halaman alumni dapat dilihat pada gambar 3.19. Alumni dapat mengisi kuesioner melalui halaman kuesioner. Berikut rancangan tampilan dari halaman kuesioner alumni.
+Selanjutnya beralih ke halaman alumni dimana terdapat beberapa menu, yaitu beranda yang terdiri dari form pengisian data \textit{tracer study} yaitu data diri, pekerjaan dan kuesioner, kemudian menu pengguna alumni, dan menu ganti \textit{password}. Rancangan tampilan halaman alumni dapat dilihat pada gambar 3.19. Alumni dapat mengisi kuesioner melalui halaman kuesioner. Berikut rancangan tampilan dari halaman kuesioner alumni.
 
 \begin{figure}[H]
 	\centering
