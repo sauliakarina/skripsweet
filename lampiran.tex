@@ -109,7 +109,10 @@ $userID = 'ALU'.$this->input->post('nim');
 $cek = $this->m_alumni->cekAlumni($this->input->post('nim'));
 
 if($cek->num_rows() > 0){
-$this->session->set_flashdata("gagalAddAlumni", '<div><div class="alert alert-danger" id="alert" align="center">Gagal menambahkan! Akun alumni sudah terdaftar</div></div>');
+$this->session->set_flashdata("gagalAddAlumni", 
+'<div><div class="alert alert-danger" 
+id="alert" align="center">Gagal menambahkan! 
+Akun alumni sudah terdaftar</div></div>');
 } else {
 
 $data_user = array(
@@ -133,7 +136,9 @@ $data_alumni = array(
 
 $this->m_master->inputData($data_alumni,'alumni');
 
-$this->session->set_flashdata("suksesAddAlumni", '<div><div class="alert alert-success" id="alert" align="center">Akun alumni berhasil ditambahkan!</div></div>');
+$this->session->set_flashdata("suksesAddAlumni", 
+'<div><div class="alert alert-success" id="alert" 
+align="center">Akun alumni berhasil ditambahkan!</div></div>');
 }
 
 redirect('admin/Alumni');
@@ -182,7 +187,9 @@ $data_alumni = array(
 $where = array('id' => $this->input->post('id'));
 $this->m_master->updateData($where,$data_alumni,'alumni');
 
-$this->session->set_flashdata("pesan", '<div><div class="alert alert-success" id="alert" align="center">Edit data alumni sukses!</div></div>');
+$this->session->set_flashdata("pesan", 
+'<div><div class="alert alert-success" id="alert" 
+align="center">Edit data alumni sukses!</div></div>');
 redirect('admin/Alumni/editProfil/'.$id);
 }
 
@@ -210,15 +217,19 @@ $inputFileType = IOFactory::identify($inputFileName);
 $objReader = IOFactory::createReader($inputFileType);
 $objPHPExcel = $objReader->load($inputFileName);
 } catch(Exception $e) {
-die('Error loading file "'.pathinfo($inputFileName,PATHINFO_BASENAME).'": '.$e->getMessage());
+die('Error loading file "
+'.pathinfo($inputFileName,PATHINFO_BASENAME).'
+": '.$e->getMessage());
 }
 
 $sheet = $objPHPExcel->getSheet(0);
 $highestRow = $sheet->getHighestRow();
 $highestColumn = $sheet->getHighestColumn();
 
-for ($row = 2; $row <= $highestRow; $row++){                  //  Read a row of data into an array
-$rowData = $sheet->rangeToArray('A' . $row . ':' . $highestColumn . $row, NULL, TRUE, FALSE);
+for ($row = 2; $row <= $highestRow; $row++){//  Read a row 
+of data into an array
+$rowData = $sheet->rangeToArray('A' . $row . ':' .
+$highestColumn . $row, NULL, TRUE, FALSE);
 
 $nim = $rowData[0][1];
 $cek = $this->m_alumni->cekAlumni($nim);
@@ -259,15 +270,19 @@ $data = array(
 "prodiID" => $this->session->userdata('prodiID')
 );
 $insert = $this->db->insert("instansi",$data);
-$id_instansi = $this->m_master->getInstansiByName($rowData[0][7])->id;
+$id_instansi = $this->m_master->
+getInstansiByName($rowData[0][7])->id;
 } else {
-$id_instansi = $this->m_master->getInstansiByName($rowData[0][7])->id;
+$id_instansi = $this->m_master->
+getInstansiByName($rowData[0][7])->id;
 }
 
 //tabel pekerjaan
-$alumniID = $this->m_alumni->getAlumniByUserID("ALU".$rowData[0][1])->id;
+$alumniID = $this->m_alumni->
+getAlumniByUserID("ALU".$rowData[0][1])->id;
 $where = array( 'id_alumni' => $alumniID);
-$cek = $this->m_master->cekData("pekerjaan",$where)->num_rows();
+$cek = $this->m_master->
+cekData("pekerjaan",$where)->num_rows();
 if ($cek == 0) {
 $firstPekerjaan = 'yes';
 } else {
@@ -286,10 +301,14 @@ $insert = $this->db->insert("pekerjaan",$data);
 } // if instansi not null
 
 }
-$this->session->set_flashdata("suksesImpor", '<div><div class="alert alert-info" id="alert" align="center">Data alumni berhasil diimpor</div></div>');
+$this->session->set_flashdata("suksesImpor", 
+'<div><div class="alert alert-info" id="alert" 
+align="center">Data alumni berhasil diimpor</div></div>');
 redirect('admin/Alumni');
 } else {
-$this->session->set_flashdata("gagalImpor", '<div><div class="alert alert-danger" id="alert" align="center">File belum dimasukkan</div></div>');
+$this->session->set_flashdata("gagalImpor", 
+'<div><div class="alert alert-danger" 
+id="alert" align="center">File belum dimasukkan</div></div>');
 redirect('admin/Alumni');
 }
 }
@@ -323,6 +342,7 @@ redirect('admin/Alumni');
 }
 
 \end{verbatim}
+
 
 
 \chapter{Sampel Kode \textit{Model} Alumni pada Admin}
